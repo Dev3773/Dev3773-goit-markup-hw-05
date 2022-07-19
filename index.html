@@ -26,7 +26,7 @@
       <nav class="navigation">
         <ul class="navigation-list list">
           <li class="navigation-item">
-            <a class="current link nav-link" href="./index.html">Студия</a>
+            <a class="current psevdo nav-link link " href="./index.html">Студия</a>
           </li>
           <li class="navigation-item">
             <a class="nav-link link" href="./portfolio.html">Портфолио</a>
@@ -56,7 +56,16 @@
     <section class="hero section">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-btn" data-modal-close>
+              <svg class="close" width="18" height="18">
+                <use href=""></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <!--About section-->
@@ -118,12 +127,15 @@
         <ul class="work-list list">
           <li class="work-item">
             <img src="./images/img-work/noutbook.jpg" alt="Ноутбук" width="370" height="294" />
+            <p class="work-text">Десктопные приложения</p>
           </li>
           <li class="work-item">
             <img src="./images/img-work/phone.jpg" alt="Смартфон" width="370" height="294" />
+            <p class="work-text">Мобильные приложения</p>
           </li>
           <li class="work-item">
             <img src="./images/img-work/ipad.jpg" alt="Планшет" width="370" height="294" />
+            <p class="work-text">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -398,6 +410,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/madal.js"></script>
 </body>
 
 </html>
