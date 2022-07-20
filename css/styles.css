@@ -329,11 +329,11 @@ img {
 
 .modal {
   position: absolute;
+  width: 528px;
+  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   border-radius: 4px;
 
   background-color: var(--main-color);
@@ -824,7 +824,8 @@ img {
 .services-item:hover,
 .services-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px 
+    rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-overlay {
@@ -834,19 +835,18 @@ img {
 
 .services-item:hover .portfolio-desc,
 .services-item:focus .portfolio-desc {
-  transform: translateY(-100%);
-  opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio-desc {
   position: absolute;
-  padding: 63px 24px;
-  opacity: 0;
-  transform: translateY(0%);
-  transition: transform var(--animac);
-  opacity: 0;
+  padding: 64px 24px;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: var(--animac);
 
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-text-cl);
 
   font-weight: 400;
